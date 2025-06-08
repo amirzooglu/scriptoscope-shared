@@ -1,16 +1,13 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.addNoteValidationSchema = void 0;
-const zod_1 = require("zod");
+import { z } from "zod";
 // Define the validation schema using Zod
 // Define the validation schema for notes
 //z.string().uuid().optional()  dont use uuid() gives error
-exports.addNoteValidationSchema = zod_1.z.object({
-    id: zod_1.z.string().nullable().optional(),
-    noteId: zod_1.z.string().nullable().optional(),
-    requestId: zod_1.z.string().nullable().optional(), // Optional UUID for contract
-    taskId: zod_1.z.string().nullable().optional(), // Optional UUID for task
-    content: zod_1.z.string().min(1, "Content is required"), // Title must be a non-empty string
-    lastUpdate: zod_1.z.date().nullable().optional(), // Optional last update date
-    noteDate: zod_1.z.date().nullable().optional(), // Optional date field
+export const addNoteValidationSchema = z.object({
+    id: z.string().nullable().optional(),
+    noteId: z.string().nullable().optional(),
+    requestId: z.string().nullable().optional(), // Optional UUID for contract
+    taskId: z.string().nullable().optional(), // Optional UUID for task
+    content: z.string().min(1, "Content is required"), // Title must be a non-empty string
+    lastUpdate: z.date().nullable().optional(), // Optional last update date
+    noteDate: z.date().nullable().optional(), // Optional date field
 });

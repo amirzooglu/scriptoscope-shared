@@ -26,3 +26,4 @@ export declare const addNoteValidationSchema: z.ZodObject<{
     noteDate?: Date | null | undefined;
 }>;
 export type AddNoteFormValues = ZodReturnType<typeof addNoteValidationSchema>;
+//# sourceMappingURL=NoteForm.schema.d.ts.map
