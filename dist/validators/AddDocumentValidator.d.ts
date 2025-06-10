@@ -1,9 +1,10 @@
 import { z } from "zod";
 import { ZodReturnType } from "../utils/types";
 import { DocumentFormatTypeEnum } from "../constants/documentFormatTypes";
-export declare const addPlaybookDocumentValidationSchema: z.ZodEffects<z.ZodObject<{
+export declare const addDocumentValidationSchema: z.ZodEffects<z.ZodObject<{
     documentTitle: z.ZodString;
-    playbookId: z.ZodOptional<z.ZodString>;
+    requestId: z.ZodOptional<z.ZodString>;
+    taskId: z.ZodOptional<z.ZodString>;
     documentSourceTypeId: z.ZodOptional<z.ZodString>;
     documentTypeId: z.ZodOptional<z.ZodString>;
     documentType: z.ZodOptional<z.ZodObject<{
@@ -48,6 +49,8 @@ export declare const addPlaybookDocumentValidationSchema: z.ZodEffects<z.ZodObje
 }, "strip", z.ZodTypeAny, {
     documentTitle: string;
     embeddingStatus: "PENDING" | "PROCESSING" | "FAILED" | "SUCCESS";
+    taskId?: string | undefined;
+    requestId?: string | undefined;
     documentSourceTypeId?: string | undefined;
     documentTypeId?: string | undefined;
     documentType?: {
@@ -70,9 +73,10 @@ export declare const addPlaybookDocumentValidationSchema: z.ZodEffects<z.ZodObje
     documentFormat?: DocumentFormatTypeEnum | undefined;
     documentFormatTypeId?: string | undefined;
     notes?: string | undefined;
-    playbookId?: string | undefined;
 }, {
     documentTitle: string;
+    taskId?: string | undefined;
+    requestId?: string | undefined;
     documentSourceTypeId?: string | undefined;
     documentTypeId?: string | undefined;
     documentType?: {
@@ -96,10 +100,11 @@ export declare const addPlaybookDocumentValidationSchema: z.ZodEffects<z.ZodObje
     documentFormat?: DocumentFormatTypeEnum | undefined;
     documentFormatTypeId?: string | undefined;
     notes?: string | undefined;
-    playbookId?: string | undefined;
 }>, {
     documentTitle: string;
     embeddingStatus: "PENDING" | "PROCESSING" | "FAILED" | "SUCCESS";
+    taskId?: string | undefined;
+    requestId?: string | undefined;
     documentSourceTypeId?: string | undefined;
     documentTypeId?: string | undefined;
     documentType?: {
@@ -122,9 +127,10 @@ export declare const addPlaybookDocumentValidationSchema: z.ZodEffects<z.ZodObje
     documentFormat?: DocumentFormatTypeEnum | undefined;
     documentFormatTypeId?: string | undefined;
     notes?: string | undefined;
-    playbookId?: string | undefined;
 }, {
     documentTitle: string;
+    taskId?: string | undefined;
+    requestId?: string | undefined;
     documentSourceTypeId?: string | undefined;
     documentTypeId?: string | undefined;
     documentType?: {
@@ -148,7 +154,6 @@ export declare const addPlaybookDocumentValidationSchema: z.ZodEffects<z.ZodObje
     documentFormat?: DocumentFormatTypeEnum | undefined;
     documentFormatTypeId?: string | undefined;
     notes?: string | undefined;
-    playbookId?: string | undefined;
 }>;
-export type AddPlaybookDocumentFormValues = ZodReturnType<typeof addPlaybookDocumentValidationSchema>;
-//# sourceMappingURL=AddPlaybookDocumentValidator.d.ts.map
+export type AddDocumentFormValues = ZodReturnType<typeof addDocumentValidationSchema>;
+//# sourceMappingURL=AddDocumentValidator.d.ts.map
