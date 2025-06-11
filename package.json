@@ -4,16 +4,6 @@
   "description": "Shared types, schemas, and utilities for Scriptoscope backend and frontend.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
-    },
-    "./validators/*": {
-      "require": "./dist/validators/*.js",
-      "types": "./dist/validators/*.d.ts"
-    }
-  },
   "files": [
     "dist"
   ],
