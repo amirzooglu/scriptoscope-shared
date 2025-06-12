@@ -26,11 +26,7 @@ export declare const RequestsSchema: z.ZodObject<{
     updatedBy: z.ZodNullable<z.ZodString>;
 }, "strip", z.ZodTypeAny, {
     id: string;
-    createdAt: Date | null;
-    updatedAt: Date | null;
     organizationId: string | null;
-    createdBy: string | null;
-    updatedBy: string | null;
     applicationId: string | null;
     statusId: string | null;
     requestTypeId: string | null;
@@ -49,13 +45,13 @@ export declare const RequestsSchema: z.ZodObject<{
     amountReceived: number | null;
     sendAlert: boolean | null;
     internalEntity: string | null;
+    createdAt: Date | null;
+    createdBy: string | null;
+    updatedAt: Date | null;
+    updatedBy: string | null;
 }, {
     id: string;
-    createdAt: Date | null;
-    updatedAt: Date | null;
     organizationId: string | null;
-    createdBy: string | null;
-    updatedBy: string | null;
     applicationId: string | null;
     statusId: string | null;
     requestTypeId: string | null;
@@ -74,6 +70,10 @@ export declare const RequestsSchema: z.ZodObject<{
     amountReceived: number | null;
     sendAlert: boolean | null;
     internalEntity: string | null;
+    createdAt: Date | null;
+    createdBy: string | null;
+    updatedAt: Date | null;
+    updatedBy: string | null;
 }>;
 export type Requests = z.infer<typeof RequestsSchema>;
 //# sourceMappingURL=RequestsSchema.d.ts.map

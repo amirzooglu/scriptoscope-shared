@@ -9,20 +9,20 @@ export declare const NotesSchema: z.ZodObject<{
     updatedBy: z.ZodNullable<z.ZodString>;
 }, "strip", z.ZodTypeAny, {
     id: string;
-    content: string;
-    createdAt: Date | null;
-    updatedAt: Date | null;
     organizationId: string | null;
+    createdAt: Date | null;
     createdBy: string | null;
+    updatedAt: Date | null;
     updatedBy: string | null;
+    content: string;
 }, {
     id: string;
-    content: string;
-    createdAt: Date | null;
-    updatedAt: Date | null;
     organizationId: string | null;
+    createdAt: Date | null;
     createdBy: string | null;
+    updatedAt: Date | null;
     updatedBy: string | null;
+    content: string;
 }>;
 export type Notes = z.infer<typeof NotesSchema>;
 //# sourceMappingURL=NotesSchema.d.ts.map
