@@ -17,8 +17,8 @@ export const RequestsSchema = z.object({
   expirationDate: z.coerce.date().nullable(),
   autoRenewal: z.boolean().nullable(),
   includeAmount: z.boolean().nullable(),
-  requestValue: z.number().nullable(),
-  amountReceived: z.number().nullable(),
+  requestValue: z.union([z.coerce.number(), z.null()]),  // ✅ Accept "123.45" as number
+  amountReceived: z.union([z.coerce.number(), z.null()]), // ✅ Same fix here
   sendAlert: z.boolean().nullable(),
   internalEntity: z.string().nullable(),
   createdAt: z.coerce.date().nullable(),

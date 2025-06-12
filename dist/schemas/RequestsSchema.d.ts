@@ -16,8 +16,8 @@ export declare const RequestsSchema: z.ZodObject<{
     expirationDate: z.ZodNullable<z.ZodDate>;
     autoRenewal: z.ZodNullable<z.ZodBoolean>;
     includeAmount: z.ZodNullable<z.ZodBoolean>;
-    requestValue: z.ZodNullable<z.ZodNumber>;
-    amountReceived: z.ZodNullable<z.ZodNumber>;
+    requestValue: z.ZodUnion<[z.ZodNumber, z.ZodNull]>;
+    amountReceived: z.ZodUnion<[z.ZodNumber, z.ZodNull]>;
     sendAlert: z.ZodNullable<z.ZodBoolean>;
     internalEntity: z.ZodNullable<z.ZodString>;
     createdAt: z.ZodNullable<z.ZodDate>;

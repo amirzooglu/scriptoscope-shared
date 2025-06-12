@@ -47,8 +47,8 @@ export declare const GetRequestNotesResponseSchema: import("zod").ZodArray<impor
         expirationDate: import("zod").ZodNullable<import("zod").ZodDate>;
         autoRenewal: import("zod").ZodNullable<import("zod").ZodBoolean>;
         includeAmount: import("zod").ZodNullable<import("zod").ZodBoolean>;
-        requestValue: import("zod").ZodNullable<import("zod").ZodNumber>;
-        amountReceived: import("zod").ZodNullable<import("zod").ZodNumber>;
+        requestValue: import("zod").ZodUnion<[import("zod").ZodNumber, import("zod").ZodNull]>;
+        amountReceived: import("zod").ZodUnion<[import("zod").ZodNumber, import("zod").ZodNull]>;
         sendAlert: import("zod").ZodNullable<import("zod").ZodBoolean>;
         internalEntity: import("zod").ZodNullable<import("zod").ZodString>;
         createdAt: import("zod").ZodNullable<import("zod").ZodDate>;

@@ -19,8 +19,8 @@ exports.RequestsSchema = zod_1.z.object({
     expirationDate: zod_1.z.coerce.date().nullable(),
     autoRenewal: zod_1.z.boolean().nullable(),
     includeAmount: zod_1.z.boolean().nullable(),
-    requestValue: zod_1.z.number().nullable(),
-    amountReceived: zod_1.z.number().nullable(),
+    requestValue: zod_1.z.union([zod_1.z.coerce.number(), zod_1.z.null()]), // ✅ Accept "123.45" as number
+    amountReceived: zod_1.z.union([zod_1.z.coerce.number(), zod_1.z.null()]), // ✅ Same fix here
     sendAlert: zod_1.z.boolean().nullable(),
     internalEntity: zod_1.z.string().nullable(),
     createdAt: zod_1.z.coerce.date().nullable(),
