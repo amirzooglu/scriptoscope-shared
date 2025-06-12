@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { ZodReturnType } from "../utils/types";
-export declare const addNoteValidationSchema: z.ZodObject<{
+export declare const editNoteValidationSchema: z.ZodObject<{
     id: z.ZodString;
     noteId: z.ZodOptional<z.ZodString>;
     requestId: z.ZodOptional<z.ZodString>;
@@ -22,5 +22,5 @@ export declare const addNoteValidationSchema: z.ZodObject<{
     lastUpdate?: Date | undefined;
     noteDate?: Date | undefined;
 }>;
-export type AddNoteFormValues = ZodReturnType<typeof addNoteValidationSchema>;
+export type EditNoteFormValues = ZodReturnType<typeof editNoteValidationSchema>;
 //# sourceMappingURL=EditNoteValidator.d.ts.map

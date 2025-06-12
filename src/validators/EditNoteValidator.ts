@@ -7,7 +7,7 @@ import { ZodReturnType } from "../utils/types";
 // Define the validation schema for notes
 
 //z.string().uuid().optional()  dont use uuid() gives error
-export const addNoteValidationSchema = z.object({
+export const editNoteValidationSchema = z.object({
 
   id: z.string(),
   noteId: z.string().optional(),
@@ -20,7 +20,7 @@ export const addNoteValidationSchema = z.object({
 
 
 
-export type AddNoteFormValues = ZodReturnType<typeof addNoteValidationSchema>;
+export type EditNoteFormValues = ZodReturnType<typeof editNoteValidationSchema>;
 
 
 
