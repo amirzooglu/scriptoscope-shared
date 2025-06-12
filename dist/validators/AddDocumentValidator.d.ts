@@ -49,8 +49,9 @@ export declare const addDocumentValidationSchema: z.ZodEffects<z.ZodObject<{
 }, "strip", z.ZodTypeAny, {
     documentTitle: string;
     embeddingStatus: "PENDING" | "PROCESSING" | "FAILED" | "SUCCESS";
-    taskId?: string | undefined;
+    notes?: string | undefined;
     requestId?: string | undefined;
+    taskId?: string | undefined;
     documentSourceTypeId?: string | undefined;
     documentTypeId?: string | undefined;
     documentType?: {
@@ -72,11 +73,11 @@ export declare const addDocumentValidationSchema: z.ZodEffects<z.ZodObject<{
     documentKey?: string | undefined;
     documentFormat?: DocumentFormatTypeEnum | undefined;
     documentFormatTypeId?: string | undefined;
-    notes?: string | undefined;
 }, {
     documentTitle: string;
-    taskId?: string | undefined;
+    notes?: string | undefined;
     requestId?: string | undefined;
+    taskId?: string | undefined;
     documentSourceTypeId?: string | undefined;
     documentTypeId?: string | undefined;
     documentType?: {
@@ -99,12 +100,12 @@ export declare const addDocumentValidationSchema: z.ZodEffects<z.ZodObject<{
     documentKey?: string | undefined;
     documentFormat?: DocumentFormatTypeEnum | undefined;
     documentFormatTypeId?: string | undefined;
-    notes?: string | undefined;
 }>, {
     documentTitle: string;
     embeddingStatus: "PENDING" | "PROCESSING" | "FAILED" | "SUCCESS";
-    taskId?: string | undefined;
+    notes?: string | undefined;
     requestId?: string | undefined;
+    taskId?: string | undefined;
     documentSourceTypeId?: string | undefined;
     documentTypeId?: string | undefined;
     documentType?: {
@@ -126,11 +127,11 @@ export declare const addDocumentValidationSchema: z.ZodEffects<z.ZodObject<{
     documentKey?: string | undefined;
     documentFormat?: DocumentFormatTypeEnum | undefined;
     documentFormatTypeId?: string | undefined;
-    notes?: string | undefined;
 }, {
     documentTitle: string;
-    taskId?: string | undefined;
+    notes?: string | undefined;
     requestId?: string | undefined;
+    taskId?: string | undefined;
     documentSourceTypeId?: string | undefined;
     documentTypeId?: string | undefined;
     documentType?: {
@@ -153,7 +154,6 @@ export declare const addDocumentValidationSchema: z.ZodEffects<z.ZodObject<{
     documentKey?: string | undefined;
     documentFormat?: DocumentFormatTypeEnum | undefined;
     documentFormatTypeId?: string | undefined;
-    notes?: string | undefined;
 }>;
 export type AddDocumentFormValues = ZodReturnType<typeof addDocumentValidationSchema>;
 //# sourceMappingURL=AddDocumentValidator.d.ts.map

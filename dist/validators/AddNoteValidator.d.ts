@@ -11,18 +11,18 @@ export declare const addNoteValidationSchema: z.ZodObject<{
 }, "strip", z.ZodTypeAny, {
     content: string;
     id?: string | undefined;
-    taskId?: string | undefined;
-    lastUpdate?: Date | undefined;
     requestId?: string | undefined;
     noteId?: string | undefined;
+    taskId?: string | undefined;
+    lastUpdate?: Date | undefined;
     noteDate?: Date | undefined;
 }, {
     content: string;
     id?: string | undefined;
-    taskId?: string | undefined;
-    lastUpdate?: Date | undefined;
     requestId?: string | undefined;
     noteId?: string | undefined;
+    taskId?: string | undefined;
+    lastUpdate?: Date | undefined;
     noteDate?: Date | undefined;
 }>;
 export type AddNoteFormValues = ZodReturnType<typeof addNoteValidationSchema>;

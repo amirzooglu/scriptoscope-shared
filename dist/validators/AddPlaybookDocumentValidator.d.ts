@@ -48,6 +48,7 @@ export declare const addPlaybookDocumentValidationSchema: z.ZodEffects<z.ZodObje
 }, "strip", z.ZodTypeAny, {
     documentTitle: string;
     embeddingStatus: "PENDING" | "PROCESSING" | "FAILED" | "SUCCESS";
+    notes?: string | undefined;
     documentSourceTypeId?: string | undefined;
     documentTypeId?: string | undefined;
     documentType?: {
@@ -69,10 +70,10 @@ export declare const addPlaybookDocumentValidationSchema: z.ZodEffects<z.ZodObje
     documentKey?: string | undefined;
     documentFormat?: DocumentFormatTypeEnum | undefined;
     documentFormatTypeId?: string | undefined;
-    notes?: string | undefined;
     playbookId?: string | undefined;
 }, {
     documentTitle: string;
+    notes?: string | undefined;
     documentSourceTypeId?: string | undefined;
     documentTypeId?: string | undefined;
     documentType?: {
@@ -95,11 +96,11 @@ export declare const addPlaybookDocumentValidationSchema: z.ZodEffects<z.ZodObje
     documentKey?: string | undefined;
     documentFormat?: DocumentFormatTypeEnum | undefined;
     documentFormatTypeId?: string | undefined;
-    notes?: string | undefined;
     playbookId?: string | undefined;
 }>, {
     documentTitle: string;
     embeddingStatus: "PENDING" | "PROCESSING" | "FAILED" | "SUCCESS";
+    notes?: string | undefined;
     documentSourceTypeId?: string | undefined;
     documentTypeId?: string | undefined;
     documentType?: {
@@ -121,10 +122,10 @@ export declare const addPlaybookDocumentValidationSchema: z.ZodEffects<z.ZodObje
     documentKey?: string | undefined;
     documentFormat?: DocumentFormatTypeEnum | undefined;
     documentFormatTypeId?: string | undefined;
-    notes?: string | undefined;
     playbookId?: string | undefined;
 }, {
     documentTitle: string;
+    notes?: string | undefined;
     documentSourceTypeId?: string | undefined;
     documentTypeId?: string | undefined;
     documentType?: {
@@ -147,7 +148,6 @@ export declare const addPlaybookDocumentValidationSchema: z.ZodEffects<z.ZodObje
     documentKey?: string | undefined;
     documentFormat?: DocumentFormatTypeEnum | undefined;
     documentFormatTypeId?: string | undefined;
-    notes?: string | undefined;
     playbookId?: string | undefined;
 }>;
 export type AddPlaybookDocumentFormValues = ZodReturnType<typeof addPlaybookDocumentValidationSchema>;

@@ -42,8 +42,8 @@ export declare const addPlaybookValidationSchema: z.ZodObject<{
     recommendationType?: string | undefined;
 }, {
     name: string;
-    description?: string | undefined;
     id?: string | undefined;
+    description?: string | undefined;
     roleId?: string | undefined;
     role?: {
         id: string;
