@@ -1,29 +1,29 @@
 import { z } from "zod";
 import { ZodReturnType } from "../utils/types";
 export declare const addNoteValidationSchema: z.ZodObject<{
-    id: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-    noteId: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-    requestId: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-    taskId: z.ZodOptional<z.ZodNullable<z.ZodString>>;
+    id: z.ZodOptional<z.ZodString>;
+    noteId: z.ZodOptional<z.ZodString>;
+    requestId: z.ZodOptional<z.ZodString>;
+    taskId: z.ZodOptional<z.ZodString>;
     content: z.ZodString;
-    lastUpdate: z.ZodOptional<z.ZodNullable<z.ZodDate>>;
-    noteDate: z.ZodOptional<z.ZodNullable<z.ZodDate>>;
+    lastUpdate: z.ZodOptional<z.ZodDate>;
+    noteDate: z.ZodOptional<z.ZodDate>;
 }, "strip", z.ZodTypeAny, {
     content: string;
-    id?: string | null | undefined;
-    taskId?: string | null | undefined;
-    lastUpdate?: Date | null | undefined;
-    requestId?: string | null | undefined;
-    noteId?: string | null | undefined;
-    noteDate?: Date | null | undefined;
+    id?: string | undefined;
+    taskId?: string | undefined;
+    lastUpdate?: Date | undefined;
+    requestId?: string | undefined;
+    noteId?: string | undefined;
+    noteDate?: Date | undefined;
 }, {
     content: string;
-    id?: string | null | undefined;
-    taskId?: string | null | undefined;
-    lastUpdate?: Date | null | undefined;
-    requestId?: string | null | undefined;
-    noteId?: string | null | undefined;
-    noteDate?: Date | null | undefined;
+    id?: string | undefined;
+    taskId?: string | undefined;
+    lastUpdate?: Date | undefined;
+    requestId?: string | undefined;
+    noteId?: string | undefined;
+    noteDate?: Date | undefined;
 }>;
 export type AddNoteFormValues = ZodReturnType<typeof addNoteValidationSchema>;
 //# sourceMappingURL=AddNoteValidator.d.ts.map

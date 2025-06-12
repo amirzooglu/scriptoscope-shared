@@ -9,13 +9,13 @@ import { ZodReturnType } from "../utils/types";
 //z.string().uuid().optional()  dont use uuid() gives error
 export const addNoteValidationSchema = z.object({
 
-  id: z.string().nullable().optional(),
-  noteId: z.string().nullable().optional(),
-  requestId: z.string().nullable().optional(),  // Optional UUID for contract
-  taskId: z.string().nullable().optional(),  // Optional UUID for task
+  id: z.string().optional(),
+  noteId: z.string().optional(),
+  requestId: z.string().optional(),  // Optional UUID for contract
+  taskId: z.string().optional(),  // Optional UUID for task
   content: z.string().min(1, "Content is required"),  // Title must be a non-empty string
-  lastUpdate: z.date().nullable().optional(),  // Optional last update date
-  noteDate: z.date().nullable().optional(),  // Optional date field
+  lastUpdate: z.date().optional(),  // Optional last update date
+  noteDate: z.date().optional(),  // Optional date field
 
 });
 
