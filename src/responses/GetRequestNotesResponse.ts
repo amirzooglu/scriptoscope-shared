@@ -1,18 +1,8 @@
-import { z } from 'zod';
-import { RequestsSchema } from '../schemas/RequestsSchema';
-import { NotesSchema } from '../schemas/NotesSchema';
+// scriptoscope-shared/src/responses/GetRequestNotesResponse.ts
+import {
+  RequestNotesResponseSchema,
+  type RequestNotesResponse,
+} from '../schemas/RequestNoteSchema';
 
-export const GetRequestNotesResponseSchema = z.array(
-  z.object({
-    id: z.string().uuid(),
-    requestId: z.string().uuid().nullable(),
-    noteId: z.string().uuid().nullable(),
-    createdAt: z.coerce.date().nullable(),
-    createdBy: z.string().uuid().nullable(),
-    users: z.any().optional(), // you can define a proper user schema if needed
-    notes: NotesSchema.nullable(),
-    requests: RequestsSchema.nullable(),
-  })
-);
-
-export type GetRequestNotesResponseType = z.infer<typeof GetRequestNotesResponseSchema>;
+export const GetRequestNotesResponseSchema = RequestNotesResponseSchema;
+export type GetRequestNotesResponseType = RequestNotesResponse;

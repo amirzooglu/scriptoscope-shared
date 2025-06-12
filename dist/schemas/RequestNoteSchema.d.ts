@@ -15,20 +15,20 @@ export declare const RequestNoteSchema: z.ZodObject<{
         updatedBy: z.ZodNullable<z.ZodString>;
     }, "strip", z.ZodTypeAny, {
         id: string;
-        organizationId: string | null;
-        createdAt: Date | null;
-        createdBy: string | null;
-        updatedAt: Date | null;
-        updatedBy: string | null;
         content: string;
+        createdAt: Date | null;
+        updatedAt: Date | null;
+        organizationId: string | null;
+        createdBy: string | null;
+        updatedBy: string | null;
     }, {
         id: string;
-        organizationId: string | null;
-        createdAt: Date | null;
-        createdBy: string | null;
-        updatedAt: Date | null;
-        updatedBy: string | null;
         content: string;
+        createdAt: Date | null;
+        updatedAt: Date | null;
+        organizationId: string | null;
+        createdBy: string | null;
+        updatedBy: string | null;
     }>>;
     requests: z.ZodNullable<z.ZodObject<{
         id: z.ZodString;
@@ -57,7 +57,11 @@ export declare const RequestNoteSchema: z.ZodObject<{
         updatedBy: z.ZodNullable<z.ZodString>;
     }, "strip", z.ZodTypeAny, {
         id: string;
+        createdAt: Date | null;
+        updatedAt: Date | null;
         organizationId: string | null;
+        createdBy: string | null;
+        updatedBy: string | null;
         applicationId: string | null;
         statusId: string | null;
         requestTypeId: string | null;
@@ -76,13 +80,13 @@ export declare const RequestNoteSchema: z.ZodObject<{
         amountReceived: number | null;
         sendAlert: boolean | null;
         internalEntity: string | null;
-        createdAt: Date | null;
-        createdBy: string | null;
-        updatedAt: Date | null;
-        updatedBy: string | null;
     }, {
         id: string;
+        createdAt: Date | null;
+        updatedAt: Date | null;
         organizationId: string | null;
+        createdBy: string | null;
+        updatedBy: string | null;
         applicationId: string | null;
         statusId: string | null;
         requestTypeId: string | null;
@@ -101,29 +105,29 @@ export declare const RequestNoteSchema: z.ZodObject<{
         amountReceived: number | null;
         sendAlert: boolean | null;
         internalEntity: string | null;
-        createdAt: Date | null;
-        createdBy: string | null;
-        updatedAt: Date | null;
-        updatedBy: string | null;
     }>>;
 }, "strip", z.ZodTypeAny, {
     id: string;
-    notes: {
-        id: string;
-        organizationId: string | null;
-        createdAt: Date | null;
-        createdBy: string | null;
-        updatedAt: Date | null;
-        updatedBy: string | null;
-        content: string;
-    } | null;
     createdAt: Date | null;
     createdBy: string | null;
+    notes: {
+        id: string;
+        content: string;
+        createdAt: Date | null;
+        updatedAt: Date | null;
+        organizationId: string | null;
+        createdBy: string | null;
+        updatedBy: string | null;
+    } | null;
     requestId: string | null;
     noteId: string | null;
     requests: {
         id: string;
+        createdAt: Date | null;
+        updatedAt: Date | null;
         organizationId: string | null;
+        createdBy: string | null;
+        updatedBy: string | null;
         applicationId: string | null;
         statusId: string | null;
         requestTypeId: string | null;
@@ -142,29 +146,29 @@ export declare const RequestNoteSchema: z.ZodObject<{
         amountReceived: number | null;
         sendAlert: boolean | null;
         internalEntity: string | null;
-        createdAt: Date | null;
-        createdBy: string | null;
-        updatedAt: Date | null;
-        updatedBy: string | null;
     } | null;
 }, {
     id: string;
-    notes: {
-        id: string;
-        organizationId: string | null;
-        createdAt: Date | null;
-        createdBy: string | null;
-        updatedAt: Date | null;
-        updatedBy: string | null;
-        content: string;
-    } | null;
     createdAt: Date | null;
     createdBy: string | null;
+    notes: {
+        id: string;
+        content: string;
+        createdAt: Date | null;
+        updatedAt: Date | null;
+        organizationId: string | null;
+        createdBy: string | null;
+        updatedBy: string | null;
+    } | null;
     requestId: string | null;
     noteId: string | null;
     requests: {
         id: string;
+        createdAt: Date | null;
+        updatedAt: Date | null;
         organizationId: string | null;
+        createdBy: string | null;
+        updatedBy: string | null;
         applicationId: string | null;
         statusId: string | null;
         requestTypeId: string | null;
@@ -183,10 +187,6 @@ export declare const RequestNoteSchema: z.ZodObject<{
         amountReceived: number | null;
         sendAlert: boolean | null;
         internalEntity: string | null;
-        createdAt: Date | null;
-        createdBy: string | null;
-        updatedAt: Date | null;
-        updatedBy: string | null;
     } | null;
 }>;
 export declare const RequestNotesResponseSchema: z.ZodArray<z.ZodObject<{
@@ -205,20 +205,20 @@ export declare const RequestNotesResponseSchema: z.ZodArray<z.ZodObject<{
         updatedBy: z.ZodNullable<z.ZodString>;
     }, "strip", z.ZodTypeAny, {
         id: string;
-        organizationId: string | null;
-        createdAt: Date | null;
-        createdBy: string | null;
-        updatedAt: Date | null;
-        updatedBy: string | null;
         content: string;
+        createdAt: Date | null;
+        updatedAt: Date | null;
+        organizationId: string | null;
+        createdBy: string | null;
+        updatedBy: string | null;
     }, {
         id: string;
-        organizationId: string | null;
-        createdAt: Date | null;
-        createdBy: string | null;
-        updatedAt: Date | null;
-        updatedBy: string | null;
         content: string;
+        createdAt: Date | null;
+        updatedAt: Date | null;
+        organizationId: string | null;
+        createdBy: string | null;
+        updatedBy: string | null;
     }>>;
     requests: z.ZodNullable<z.ZodObject<{
         id: z.ZodString;
@@ -247,7 +247,11 @@ export declare const RequestNotesResponseSchema: z.ZodArray<z.ZodObject<{
         updatedBy: z.ZodNullable<z.ZodString>;
     }, "strip", z.ZodTypeAny, {
         id: string;
+        createdAt: Date | null;
+        updatedAt: Date | null;
         organizationId: string | null;
+        createdBy: string | null;
+        updatedBy: string | null;
         applicationId: string | null;
         statusId: string | null;
         requestTypeId: string | null;
@@ -266,13 +270,13 @@ export declare const RequestNotesResponseSchema: z.ZodArray<z.ZodObject<{
         amountReceived: number | null;
         sendAlert: boolean | null;
         internalEntity: string | null;
-        createdAt: Date | null;
-        createdBy: string | null;
-        updatedAt: Date | null;
-        updatedBy: string | null;
     }, {
         id: string;
+        createdAt: Date | null;
+        updatedAt: Date | null;
         organizationId: string | null;
+        createdBy: string | null;
+        updatedBy: string | null;
         applicationId: string | null;
         statusId: string | null;
         requestTypeId: string | null;
@@ -291,29 +295,29 @@ export declare const RequestNotesResponseSchema: z.ZodArray<z.ZodObject<{
         amountReceived: number | null;
         sendAlert: boolean | null;
         internalEntity: string | null;
-        createdAt: Date | null;
-        createdBy: string | null;
-        updatedAt: Date | null;
-        updatedBy: string | null;
     }>>;
 }, "strip", z.ZodTypeAny, {
     id: string;
-    notes: {
-        id: string;
-        organizationId: string | null;
-        createdAt: Date | null;
-        createdBy: string | null;
-        updatedAt: Date | null;
-        updatedBy: string | null;
-        content: string;
-    } | null;
     createdAt: Date | null;
     createdBy: string | null;
+    notes: {
+        id: string;
+        content: string;
+        createdAt: Date | null;
+        updatedAt: Date | null;
+        organizationId: string | null;
+        createdBy: string | null;
+        updatedBy: string | null;
+    } | null;
     requestId: string | null;
     noteId: string | null;
     requests: {
         id: string;
+        createdAt: Date | null;
+        updatedAt: Date | null;
         organizationId: string | null;
+        createdBy: string | null;
+        updatedBy: string | null;
         applicationId: string | null;
         statusId: string | null;
         requestTypeId: string | null;
@@ -332,29 +336,29 @@ export declare const RequestNotesResponseSchema: z.ZodArray<z.ZodObject<{
         amountReceived: number | null;
         sendAlert: boolean | null;
         internalEntity: string | null;
-        createdAt: Date | null;
-        createdBy: string | null;
-        updatedAt: Date | null;
-        updatedBy: string | null;
     } | null;
 }, {
     id: string;
-    notes: {
-        id: string;
-        organizationId: string | null;
-        createdAt: Date | null;
-        createdBy: string | null;
-        updatedAt: Date | null;
-        updatedBy: string | null;
-        content: string;
-    } | null;
     createdAt: Date | null;
     createdBy: string | null;
+    notes: {
+        id: string;
+        content: string;
+        createdAt: Date | null;
+        updatedAt: Date | null;
+        organizationId: string | null;
+        createdBy: string | null;
+        updatedBy: string | null;
+    } | null;
     requestId: string | null;
     noteId: string | null;
     requests: {
         id: string;
+        createdAt: Date | null;
+        updatedAt: Date | null;
         organizationId: string | null;
+        createdBy: string | null;
+        updatedBy: string | null;
         applicationId: string | null;
         statusId: string | null;
         requestTypeId: string | null;
@@ -373,10 +377,6 @@ export declare const RequestNotesResponseSchema: z.ZodArray<z.ZodObject<{
         amountReceived: number | null;
         sendAlert: boolean | null;
         internalEntity: string | null;
-        createdAt: Date | null;
-        createdBy: string | null;
-        updatedAt: Date | null;
-        updatedBy: string | null;
     } | null;
 }>, "many">;
 export type RequestNote = z.infer<typeof RequestNoteSchema>;
