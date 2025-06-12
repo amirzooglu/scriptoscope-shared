@@ -8,8 +8,8 @@ const zod_1 = require("zod");
 exports.addNoteValidationSchema = zod_1.z.object({
     id: zod_1.z.string().optional(),
     noteId: zod_1.z.string().optional(),
-    requestId: zod_1.z.string().optional(), // Optional UUID for contract
-    content: zod_1.z.string().min(1, "Content is required"), // Title must be a non-empty string
-    lastUpdate: zod_1.z.date().optional(), // Optional last update date
-    noteDate: zod_1.z.date().optional(), // Optional date field
+    requestId: zod_1.z.string().optional(),
+    content: zod_1.z.string().min(1, "Content is required"),
+    lastUpdate: zod_1.z.coerce.date().optional(),
+    noteDate: zod_1.z.coerce.date().optional(),
 });
