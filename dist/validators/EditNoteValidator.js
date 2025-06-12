@@ -6,7 +6,7 @@ const zod_1 = require("zod");
 // Define the validation schema for notes
 //z.string().uuid().optional()  dont use uuid() gives error
 exports.addNoteValidationSchema = zod_1.z.object({
-    id: zod_1.z.string().optional(),
+    id: zod_1.z.string(),
     noteId: zod_1.z.string().optional(),
     requestId: zod_1.z.string().optional(), // Optional UUID for contract
     content: zod_1.z.string().min(1, "Content is required"), // Title must be a non-empty string
