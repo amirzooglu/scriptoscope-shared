@@ -15,4 +15,4 @@ export const GetRequestNotesResponseSchema = z.array(
   })
 );
 
-export type GetRequestNotesResponse = z.infer<typeof GetRequestNotesResponseSchema>;
+export type GetRequestNotesResponseType = z.infer<typeof GetRequestNotesResponseSchema>;
