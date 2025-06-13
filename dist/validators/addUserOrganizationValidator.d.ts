@@ -17,4 +17,4 @@ export declare const addUserOrganizationValidationSchema: z.ZodObject<{
     organizationName: string;
 }>;
 export type AddUserOrganizationFormValues = ZodReturnType<typeof addUserOrganizationValidationSchema>;
-//# sourceMappingURL=addUserOrganizationValidator.d.ts.map
+//# sourceMappingURL=AddUserOrganizationValidator.d.ts.map
