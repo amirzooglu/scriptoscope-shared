@@ -65,4 +65,4 @@ export declare const addTemplateValidationSchema: z.ZodObject<{
     usersRequestTemplatesUpdatedByTousers?: any;
 }>;
 export type AddTemplateFormValues = ZodReturnType<typeof addTemplateValidationSchema>;
-//# sourceMappingURL=addTemplateValidator.d.ts.map
+//# sourceMappingURL=AddTemplateValidator.d.ts.map
