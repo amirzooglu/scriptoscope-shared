@@ -12,7 +12,7 @@ exports.RequestsSchema = zod_1.z.object({
     requestOwnerId: zod_1.z.string().uuid().nullable(),
     requestorId: zod_1.z.string().uuid().nullable(),
     requestDate: zod_1.z.coerce.date().nullable(),
-    requestNumber: zod_1.z.string().nullable(),
+    requestNumber: zod_1.z.coerce.string().nullable(),
     shortDescription: zod_1.z.string().nullable(),
     notes: zod_1.z.string().nullable(),
     effectiveDate: zod_1.z.coerce.date().nullable(),

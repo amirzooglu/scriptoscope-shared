@@ -10,7 +10,7 @@ export const RequestsSchema = z.object({
   requestOwnerId: z.string().uuid().nullable(),
   requestorId: z.string().uuid().nullable(),
   requestDate: z.coerce.date().nullable(),
-  requestNumber: z.string().nullable(),
+  requestNumber: z.coerce.string().nullable(),
   shortDescription: z.string().nullable(),
   notes: z.string().nullable(),
   effectiveDate: z.coerce.date().nullable(),
